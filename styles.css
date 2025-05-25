@@ -5,12 +5,7 @@ html {
     width: 100%;
     font-size: 62.5%; /* This sets 1rem = 10px for easier calculations */
     box-sizing: border-box;
-    max-width: 100%;
-    overflow-x: hidden;
-    max-height: 100%;
 }
-
-
 body {
     background-color: hsl(30, 54%, 90%);
     display: flex;
@@ -18,7 +13,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    min-height: 100%;
     padding: 3.2rem ;
 }
 .card {
@@ -54,7 +48,6 @@ body {
     border-radius: 1.2rem;
     margin: 0;
 }
-
 .preparation ul{
     padding-left: 2.4rem;
 }
@@ -121,7 +114,6 @@ h2{
     font-size: 1.6rem;   
     color: hsl(30, 10%, 34%);
 }
-
 .nutrition table{
     padding-left: 2.4rem;
     font-family: outfit;
@@ -130,7 +122,6 @@ h2{
     color: hsl(30, 10%, 34%);
     width: 100%;
 }
-
 .nutrition table th{
     font-family: outfit;
     font-weight: 400;
@@ -139,7 +130,6 @@ h2{
     padding: 1.2rem;
     text-align: left;
     border-bottom: 1px solid hsl(30, 18%, 87%);
-    
 }
 .nutrition table td{
     font-family: outfit;
@@ -149,15 +139,13 @@ h2{
     font-weight: bold;
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
-
 hr{
     border: none;
-    height: 1px;
+    height: .1rem;
     background-color: hsl(30, 18%, 87%);
     padding: 0;
     margin: 3.2rem 0;
 }
-
 .attribution {
     font-family: outfit;
     font-size: 1.6rem;
@@ -165,28 +153,22 @@ hr{
     text-align: center;
     margin-top: 4.8rem;
 }
-
 /* Media Queries */
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         padding: 4.8rem 3.2rem;
     }
-
     .card-content {
         padding: 3.2rem;
     }
-
     .title h1 {
         font-size: 3.6rem;
     }
 }
-
 @media screen and (max-width: 500px) {
     body {
         padding: 0;
     }
-    
     .card {
         width: 100%;
         max-width: 100%;
