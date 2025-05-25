@@ -10,6 +10,7 @@ html {
     max-height: 100%;
 }
 
+
 body {
     background-color: hsl(30, 54%, 90%);
     display: flex;
@@ -106,7 +107,7 @@ h2{
     color: hsl(30, 10%, 34%);
 }
 .instructions li::marker{
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
     font-weight: bold;
 }
 
@@ -144,7 +145,7 @@ h2{
     font-family: outfit;
     font-weight: 400;
     font-size: 1.6rem;   
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
     font-weight: bold;
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
