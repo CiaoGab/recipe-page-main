@@ -7,11 +7,7 @@ html {
     box-sizing: border-box;
     max-width: 100%;
     overflow-x: hidden;
-}
-
-/* Reset box-sizing */
-*, *::before, *::after {
-    box-sizing: inherit;
+    max-height: 100%;
 }
 
 body {
@@ -21,8 +17,8 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    min-height: 100vh;
-    padding: 3.2rem ; /* Smaller padding for mobile */
+    min-height: 100%;
+    padding: 3.2rem ;
 }
 .card {
     width: 100%;
@@ -33,14 +29,13 @@ body {
     margin: 0 auto;
 }
 .card-content {
-    padding: 2.4rem; /* Smaller padding for mobile */
+    padding: 2.4rem;
 }
 .top-image img {
     width: 100%;
     height: 100%;
     border-radius: 1.2rem;
 }
-
 .title h1{
     font-family: young-serif, serif;
     font-size: 4rem;
@@ -82,7 +77,6 @@ body {
 .preparation span{
     font-weight: bold;
 }
-
 h2{
     font-size: 2.8rem;
     color: hsl(14, 45%, 36%);
@@ -101,8 +95,6 @@ h2{
 .ingredients li::marker{
     color: hsl(332, 51%, 32%);
 }
-
-
 .instructions ol{
     padding-left: 2.4rem;
 }
@@ -174,7 +166,7 @@ hr{
 }
 
 /* Media Queries */
-/* Tablet breakpoint */
+
 @media screen and (max-width: 768px) {
     body {
         padding: 4.8rem 3.2rem;
@@ -192,7 +184,6 @@ hr{
 @media screen and (max-width: 500px) {
     body {
         padding: 0;
-        border-radius: ;
     }
     
     .card {
