@@ -1,0 +1,209 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%; /* This sets 1rem = 10px for easier calculations */
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    padding: 3.2rem 2.4rem; /* Smaller padding for mobile */
+}
+.card {
+    width: 100%;
+    max-width: 73.6rem;
+    background-color: white;
+    border-radius: 2.4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+.card-content {
+    padding: 2.4rem; /* Smaller padding for mobile */
+}
+.top-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+}
+
+.title h1{
+    font-family: young-serif, serif;
+    font-size: 4rem;
+    color: hsl(24, 5%, 18%);
+}
+
+.title p {
+    font-family: Outfit;
+    font-size: 1.6rem;
+    color: hsl(30, 10%, 34%);
+}
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    margin: 0;
+}
+
+.preparation ul{
+    padding-left: 2.4rem;
+}
+.preparation h2 {
+    color: hsl(332, 51%, 32%);
+    font-family: outfit;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.6rem;
+}
+.preparation li{
+    margin-top: .8rem;
+    font-family: outfit;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+}
+.preparation li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.preparation span{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2.8rem;
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif';
+}
+.ingredients ul{
+    padding-left: 2.4rem;
+}
+.ingredients li{
+    margin-top: 1.6rem;
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+}
+.ingredients li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+
+.instructions ol{
+    padding-left: 2.4rem;
+}
+.instructions li{
+    margin-top: 1.6rem;
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+}
+.instructions li::marker{
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+.instructions li span{
+    font-weight: bold;
+}
+
+.nutrition p{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition table{
+    padding-left: 2.4rem;
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+    width: 100%;
+}
+
+.nutrition table th{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(30, 10%, 34%);
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    
+}
+.nutrition table td{
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.6rem;   
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    padding: 0;
+    margin: 3.2rem 0;
+}
+
+.attribution {
+    font-family: outfit;
+    font-size: 1.6rem;
+    color: hsl(30, 10%, 34%);
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+/* Media Queries */
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 4.8rem 3.2rem;
+    }
+
+    .card-content {
+        padding: 3.2rem;
+    }
+
+    .title h1 {
+        font-size: 3.6rem;
+    }
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 12.8rem 4.8rem;
+    }
+
+    .card-content {
+        padding: 4rem;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .card {
+        width: 73.6rem;
+    }
+}
