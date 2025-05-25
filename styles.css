@@ -22,7 +22,7 @@ body {
     justify-content: center;
     margin: 0;
     min-height: 100vh;
-    padding: 3.2rem 2.4rem; /* Smaller padding for mobile */
+    padding: 3.2rem ; /* Smaller padding for mobile */
 }
 .card {
     width: 100%;
@@ -175,7 +175,7 @@ hr{
 
 /* Media Queries */
 /* Tablet breakpoint */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         padding: 4.8rem 3.2rem;
     }
@@ -189,21 +189,49 @@ hr{
     }
 }
 
-/* Desktop breakpoint */
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 500px) {
     body {
-        padding: 12.8rem 4.8rem;
+        padding: 0;
+        border-radius: ;
     }
-
-    .card-content {
-        padding: 4rem;
-    }
-
-    .title h1 {
-        font-size: 4rem;
-    }
-
+    
     .card {
-        width: 73.6rem;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .top-image {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    .card-content {
+        padding: 0;
+    }
+    .top-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .title {
+        margin: 3rem;
+    }
+      .preparation {
+        margin: 3rem;
+    }
+    .ingredients {
+        margin: 3rem;
+    }
+    .instructions {
+        margin: 3rem;
+    }
+    .nutrition {
+        margin: 3rem;
+    }
+    .attribution {
+        display: none;
     }
 }
